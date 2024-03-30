@@ -1,0 +1,383 @@
+
+/* Slider Start ------------------------------------------------*/
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    65% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    85% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+.slider {
+    margin: 0 auto;
+    width: 74vw;
+    /* height: 500px; */
+    overflow: hidden;
+}
+.slider .container {
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #ffffff);
+    animation: slider 9s infinite forwards;
+}
+
+.slider .container img {
+    min-width: 100%;
+}
+/* Slider End------------------------------------------- */
+body{
+    background-color: #E3E6E6;
+}
+/* Main layout--------------------- */
+.layout{
+    width: 72vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    top: -180px;
+    box-sizing: content-box;
+}
+/* -------------------------------- */
+/* Bar Start----------------------- */
+.bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 5px 0 #cccccc;   
+}
+.bar p{
+    /* font-size: ; */
+    text-align: center;
+}
+/* Bar End------------------------ */
+/* Container 1 Start--------------------- */
+.saleContainer{
+    display: grid;
+    padding: 0 2px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    padding: 2% 2% 0 2%;
+    background: white;
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 5px #cccccc;
+}
+.saleContainer .card{ /* Cards------- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10% 0;
+    height: 15rem;
+}
+.saleContainer .cardimg{ /* Cards BG Images------- */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    box-sizing: border-box; 
+}
+/* Price Detailing PD */
+.PD{
+    padding: 5px;
+    display:flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 100%;
+    margin-top: 5px;
+
+}
+.sale{   
+    display: flex; 
+}
+.off{
+    background-color: rgb(214, 1, 1);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    /* width: 30%; */
+    padding: 2px 4px;
+    color: white;
+    font-size: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+.limited{
+    display: flex;
+    align-items:center ;
+    justify-content: start;
+    padding: 0 5px;
+    font-size: 100%;
+    font-weight: 500;
+}
+.pricetag{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: "Ubuntu", sans-serif;
+}
+.price{
+    padding: 0 7px 0 0;
+}
+.ORP{
+    padding: 0 3.5px 0 3.5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #565959 !important;
+}
+.cut{
+    padding: 0 0 0 3.5px;
+    display: inline;
+    text-decoration-line: line-through;
+}
+.testcard{
+    background-color: red;
+}
+.text{
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+.gridwrap{
+    background-color: purple;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 23% 23%;
+    grid-gap: 10px; 
+}
+.box{
+    background:blue;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+}
+/* Sale Container END------------------ */
+/* Card Cont 2 */
+.cardContainer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardsizing {
+    
+    width: 325px;
+    margin: 10px 0;
+    height: 350px;
+}
+/* Grid Card-4 ------------------------------------*/
+        /* --Cards are blaced 2 by 2-- */
+.gridcard-4 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #cccccc;
+}
+
+.gridcard-4 h2{
+    padding: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+.gridcard-4 .wrapper{
+    background-color: white;
+    height: 100%;
+    padding-bottom: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 48% 48%;
+    justify-content: space-around;
+    font-family: "Ubuntu", sans-serif;
+}
+.gridcard-4 .itemimg{
+    width: 85%;
+    height: 85%;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.gridcard-4 .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Grid Card-4  END------------------------------------------ */
+
+/* One Item Card-------------------------------------------------------- */
+        /* --Contains only 1 Item-- */
+.one-item-card h2{
+    padding: 20px 20px 0 20px;
+    font-family: "Ubuntu", sans-serif;
+    position: static;
+}
+.one-item-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #cccccc;
+}
+.one-item-card .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one-item-card .itemimg{
+    width: 85%;
+    height: 85%;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+}
+/* One Item Card END--------------------*/
+/* Grid Card 1 by 4 Start--------------------------------------- */
+    /* --4 Cards and 1 extended on top-- */
+.gridcard-1-by-4{
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px 0; */
+    /* height: 350px; */
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #cccccc;
+}
+.gridcard-1-by-4 h2{
+    padding: 0 20px;
+    padding-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+.gridcard-1-by-4 .wrapper{
+    background-color: white;
+    height: 100%;
+    padding-bottom: 20px;
+    display: grid inline;
+    /* grid-column: 1/3; */
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    font-family: "Ubuntu", sans-serif;
+}
+.gridcard-1-by-4 .itemimg{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 5px; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+.gridcard-1-by-4 .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apply-1-by-4{
+    grid-column: 1/4;
+    /* border: 2px solid black; */
+}
+/* Grid Card 1 by 4 END------------------------------------------------- */
+/* Footer -------------------------------- */
+footer{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131921;
+    height: 20vh;
+}
+/* ----------------------------------END */
+/* Media Query start----------------------------- */
+@media screen and (max-width: 1000px) { 
+    .layout{
+        /* width: 100vw; */
+        top: -40px;
+        transition: 0.3s ease-in-out;
+    } 
+}
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    .layout{
+        /* width: 100vw; */
+        top: -40px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 780px) { /* Media query for screen sizes up to 400px */
+    .saleContainer{
+        grid-template-columns: repeat(2, 1fr);
+        transition: 0.3s ease-in-out;
+    }
+    .PD{
+        font-size: 3vw;
+        transition: 0.3s ease-in-out;
+    }
+    .bar p{
+        font-size: 3vw;
+        transition: 0.3s ease-in-out;
+    }
+    .layout{
+        width: 100vw;
+        top: -40px;
+        transition: 0.3s ease-in-out;
+    }
+    .slider{
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+    .slider .container {
+        scale: 1.65;
+        height: 100%; 
+        transition: 0.3s ease-in-out;
+    }
+   
+    .slider .container img {
+        width: 100%;
+        transform: translateY(19%);
+        transition: 0.3s ease-in-out;
+    }    
+}
+@media screen and (max-width: 1840px) { /* Media query for screen sizes up to 400px */
+    .cardContainer{
+        flex-direction: column;
+        transition: 0.3s ease-in-out;
+    } 
+}
+/* Media Query End------------------------------- */

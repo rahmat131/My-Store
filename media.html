@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+        gap: 20px;
+    }
+
+    .grid-item {
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    .container{
+        background-color: aqua;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+
+    @media screen and (max-width: 768px) { /* Media query for screen sizes up to 768px */
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        }
+    }
+    @media screen and (max-width: 300px) { /* Media query for screen sizes up to 768px */
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr); /* 2 columns for smaller screens */
+        }
+    }
+</style>
+<body>
+<div class="container">
+<div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+    <!-- Add more grid items here -->
+</div>
+</div>
+
+</body>
+</html>
